@@ -1,0 +1,15 @@
+type Client {
+  id: ID
+  FullName: String
+  DOB: String
+  PassNum: Int
+  PassSer: Int
+  Water: Float
+  Light: Float
+  Gas: Float
+}
+
+type Query {
+  getAllClient: [Client]
+  getClient(id: ID): Client
+}
